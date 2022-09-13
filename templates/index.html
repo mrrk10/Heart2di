@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Heart Disease Prediction</title>
+	<title>Heart Disease Prediction System</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 <!--===============================================================================================-->
@@ -33,7 +33,6 @@
 ::placeholder {
   color: red;
 }
-<!--------------------------------------->
 a:link {
   color: magenta;
 }
@@ -54,14 +53,12 @@ a:active {
   background-color: black;
   color: black;
 }
-<!--------------------------------------->
 .contact3-form-title{
 color:black;
 font-size: 30px;
 font-family: Arial, Helvetica, sans-serif;
 font-variant: normal;
 }
-<!--------------------------------------->
 
 </style>
 </head>
@@ -69,12 +66,11 @@ font-variant: normal;
 	<div class="bg-contact3" style="background-image: url('static/images/ecg.jpg');">
 		<div class="container-contact3">
 			<div class="wrap-contact3">
-				<form action="{{ url_for('predict')}}" method="post" class="contact3-form validate-form">
+				<form action="{{ url_for('predict')}}" name="form_sunmit" method="post" class="contact3-form validate-form">
 					<span class="contact3-form-title">
-						AI Heart Disease Prediction<br>
-						<p>By : Tejas T A</p>
-						<p>Email - tejasta@gmail.com</p>
-						<a href="https://www.linkedin.com/in/tejasta/">LinkedIn - Click here</a><br>
+						Heart Disease Prediction System<br>
+						<p>By : Roshan Kadel Kshetri</p>
+						<p>Email - roshan10kandela@gmail.com</p>
 					</span>
 				
 						<div class="form-group">
@@ -122,18 +118,29 @@ font-variant: normal;
 
 						<div class="form-group">
 							<label for="exang">Exercise Induced Angina</label>
-							<select class="form-control" id="exang" name = "exang" required="required" >
+							<select class="form-control" id="exang" name ="exang" required="required" >
 								<option value="1">Yes</option>
 								<option value="0">No</option>
 							</select>
 						</div>	
 						
-						<div class="container-contact3-form-btn">
-							<button type="submit" class="contact3-form-btn">
-								Predict
-							</button>
-						</div>
-					</form>
+			<!--
+			<div class="container-contact3-form-btn">
+			<input type="submit" name="predict1" class="contact3-form-btn">Predict1</input>	
+			</div>
+
+
+			<div class="container-contact3-form-btn">
+				<input type="submit" name="predict2" class="contact3-form-btn">Predict2</input>
+				
+				</div>				 
+			-->
+			<input type="submit" name="predict1" value="predict1" />
+			<input type="submit" name="predict2" value="predict2" />
+
+			</form>  
+
+
 					
 			</div>
 		</div>

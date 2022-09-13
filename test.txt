@@ -1,0 +1,6 @@
+ if 'predict1' in request.form:
+            if(len(to_predict_list)==7):
+                result = ValuePredictor(to_predict_list,7)
+        elif 'predict2' in request.form:
+            if(len(to_predict_list)==7):
+                result = testpredictor(to_predict_list,7)
